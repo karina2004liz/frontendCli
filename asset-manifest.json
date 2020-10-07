@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/frontendCli/static/css/main.24425e0b.chunk.css",
+    "main.js": "/frontendCli/static/js/main.9a2041f9.chunk.js",
+    "main.js.map": "/frontendCli/static/js/main.9a2041f9.chunk.js.map",
+    "runtime-main.js": "/frontendCli/static/js/runtime-main.603b8836.js",
+    "runtime-main.js.map": "/frontendCli/static/js/runtime-main.603b8836.js.map",
+    "static/css/2.220ccb42.chunk.css": "/frontendCli/static/css/2.220ccb42.chunk.css",
+    "static/js/2.182d5644.chunk.js": "/frontendCli/static/js/2.182d5644.chunk.js",
+    "static/js/2.182d5644.chunk.js.map": "/frontendCli/static/js/2.182d5644.chunk.js.map",
+    "index.html": "/frontendCli/index.html",
+    "precache-manifest.cdf233093a415a972e76e1fc42f15b51.js": "/frontendCli/precache-manifest.cdf233093a415a972e76e1fc42f15b51.js",
+    "service-worker.js": "/frontendCli/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/frontendCli/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.24425e0b.chunk.css.map": "/frontendCli/static/css/main.24425e0b.chunk.css.map",
+    "static/js/2.182d5644.chunk.js.LICENSE.txt": "/frontendCli/static/js/2.182d5644.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/frontendCli/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.603b8836.js",
+    "static/css/2.220ccb42.chunk.css",
+    "static/js/2.182d5644.chunk.js",
+    "static/css/main.24425e0b.chunk.css",
+    "static/js/main.9a2041f9.chunk.js"
+  ]
+}
