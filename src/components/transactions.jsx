@@ -4,7 +4,7 @@ import "antd/dist/antd.css";
 import "./login.css";
 import { Spin } from "antd";
 import { Card, Col, Row } from "antd";
-import { Alert } from 'antd';
+
 
 const Transactions = (props) => {
   console.log(props.props);
@@ -26,17 +26,7 @@ const Transactions = (props) => {
     )
   }
 
-  const showInfo = () =>{
-      return(
-        <Alert
-        message="Information"
-        description="You can select transactions by date, by date and parking, or only by parking"
-        type="info"
-        showIcon
-        closable
-      />         
-      )
-  }
+
 
 
   return (
