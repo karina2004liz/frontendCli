@@ -24,7 +24,7 @@ const Users = () => {
       const pays = data.data.paysUser;
       console.log(pays);
       return Modal.info({
-        title: "Transacciones",
+        title: "Transactions",
         content: (
           <div>
             {pays.length !== 0 ? (
@@ -64,6 +64,13 @@ const Users = () => {
     });
   };
 
+  const title = (props) =>{
+      
+    return(
+    <h3 style= {{color:"white"}}>{props}</h3>
+    )
+  }
+
   return (
     <div className="site-card-wrapper">
       {loading && (
@@ -77,8 +84,8 @@ const Users = () => {
             return (
               <Col key={el.id} span={8}>
                 <Card
-                  style={{ height: 250, "margin-top": "10%" }}
-                  title={el.name}
+                  style={{ height: 250, "margin-top": "10%" ,background:"#001529", borderRadius:"10px", color:"white"}}
+                  title={title(el.name)}
                   bordered={true}
                 >
                   <p>{el.email}</p>
@@ -86,7 +93,7 @@ const Users = () => {
                     <b>{el.phone}</b>
                   </p>
                   <p>{el.id}</p>
-                  <Button onClick={() => info(el.id)}>Info</Button>
+                  <Button type="primary" onClick={() => info(el.id)}>Transactions</Button>
                 </Card>
               </Col>
             );

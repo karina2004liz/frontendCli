@@ -10,6 +10,7 @@ import UserServices from "../services/user.service";
 import userService from "../services/user.service";
 import { Table } from "antd";
 import CsvDownload from "react-json-to-csv";
+import { Alert } from 'antd';
 
 
 const openNotificationWithIcon = (message, description) => {
@@ -101,11 +102,21 @@ const Reports = (props) => {
           setLoading(false);
         });
     }
-
-    const { email, password } = values;
   };
 
   const dateFormat = "YYYY/MM/DD";
+
+  const showInfo = () =>{
+    return(
+      <Alert
+      message="Information"
+      description="You can select transactions by date, by date and parking, or only by parking"
+      type="info"
+      showIcon
+      closable
+    />         
+    )
+}
 
   const columns = [
     {
@@ -132,6 +143,13 @@ const Reports = (props) => {
 
   return (
     <div className="site-card-wrapper">
+          <Alert
+      message="Information"
+      description="You can select transactions by date, by date and parking, or only by parking"
+      type="info"
+      showIcon
+      closable
+    /> 
       <center>
         <Form
           form={form}
@@ -143,10 +161,10 @@ const Reports = (props) => {
           onFinish={onFinish}
         >
           <Form.Item name="firstDate" label="Seleccione fecha inicial">
-            <DatePicker />
+            <DatePicker style={{width:"100%"}}/>
           </Form.Item>
-          <Form.Item name="secondDate" label="Seleccione fecha final">
-            <DatePicker />
+          <Form.Item  name="secondDate" label="Seleccione fecha final">
+            <DatePicker style={{width:"100%"}} />
           </Form.Item>
           <Form.Item name="idParking" label="Seleccione Estacionamiento">
             <Select>

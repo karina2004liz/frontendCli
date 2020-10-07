@@ -4,7 +4,7 @@
   }
 
   .login-form-report{
-    max-width: 500px;
+    max-width: 370px;
     padding: 0 0;
 
   }
@@ -29,4 +29,9 @@
     overflow-y: scroll;
   }
 
+.infoProfile {
+    text-align:center;
+    font-weight: 700;
+    
+}
  

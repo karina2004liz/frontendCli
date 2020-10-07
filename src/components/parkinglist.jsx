@@ -19,6 +19,12 @@ const Parking = (props) => {
     });
   }, []);
 
+  const title = (props) =>{   
+    return(
+    <h3 style= {{color:"white"}}>{props}</h3>
+    )
+  }
+
   return (
     <div className="site-card-wrapper">
       {loading && (
@@ -32,8 +38,8 @@ const Parking = (props) => {
             return (
               <Col key={el.id} span={8}>
                 <Card
-                  style={{ height: 250, "margin-top": "10%" }}
-                  title={el.name}
+                  style={{ height: 250, "margin-top": "10%" ,background:"#001529", borderRadius:"10px", color:"white"}}
+                  title={title(el.name)}
                   bordered={true}
                 >
                   <p>{el.id}</p>
