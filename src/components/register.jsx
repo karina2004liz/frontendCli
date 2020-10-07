@@ -46,6 +46,7 @@ const SinginComponent = (props) => {
 
   return (
     <center>
+      <img style={{width:"15%",position:"relative"}} src = "https://www.pinclipart.com/picdir/big/75-755148_if-your-referral-joins-before-the-annual-conference.png"></img>
       <Form
         name="normal_login"
         className="login-form"

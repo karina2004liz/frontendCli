@@ -57,7 +57,7 @@ const App = () => {
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to={"/singin"} className="nav-link">
-                  Signin
+                  Register
                 </Link>
               </Menu.Item>
             </Menu>
