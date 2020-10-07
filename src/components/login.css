@@ -1,0 +1,32 @@
+.login-form {
+    max-width: 300px;
+    padding: 5% 0;
+  }
+
+  .login-form-report{
+    max-width: 500px;
+    padding: 0 0;
+
+  }
+  .login-form-forgot {
+    float: right;
+  }
+  .ant-col-rtl .login-form-forgot {
+    float: left;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+
+  center{
+    padding: 5% 0;
+  }
+
+  .site-card-wrapper {
+    padding: 30px;
+    background: #ececec;
+    height: 75vh;
+    overflow-y: scroll;
+  }
+
+ 
