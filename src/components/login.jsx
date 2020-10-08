@@ -1,7 +1,6 @@
-import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import AuthService from "../services/auth.service";
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input, Button } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
 import "antd/dist/antd.css";
@@ -28,16 +27,16 @@ const LoginComponent = (props) => {
             error.response.data.message) ||
           error.message ||
           error.toString();
-
+          console.log(resMessage)
         setLoading(false);
-        //setMessage(resMessage);
+        
       }
     );
   };
 
   return (
     <center>
-      <img style={{width:"25%"}} src={"https://pngimg.com/uploads/welcome/welcome_PNG48.png"}></img>
+      <img alt="Girl in a jacket" style={{width:"25%"}} src={"https://pngimg.com/uploads/welcome/welcome_PNG48.png"}></img>
       <Form
         name="normal_login"
         className="login-form"

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import AuthService from "../services/auth.service";
 import 'antd/dist/antd.css';
 import "./login.css"
@@ -8,17 +8,7 @@ import Parkings from "./parkinglist"
 import Users from "./users"
 import Transactions from "./transactions"
 import Reports from "./reports"
-import {
-    HomeOutlined,
-    SettingFilled,
-    SmileOutlined,
-    SyncOutlined,
-    LoadingOutlined,
-    HomeTwoTone
-  } from '@ant-design/icons';
 const { TabPane } = Tabs;
-
-
 
 
 const Home = (props) => {

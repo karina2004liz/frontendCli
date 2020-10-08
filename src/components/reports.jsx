@@ -22,7 +22,6 @@ const openNotificationWithIcon = (message, description) => {
 
 const Reports = (props) => {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
   const [parkings, setParkings] = useState([]);
   const [reports, setReports] = useState([]);
 
@@ -106,17 +105,6 @@ const Reports = (props) => {
 
   const dateFormat = "YYYY/MM/DD";
 
-  const showInfo = () =>{
-    return(
-      <Alert
-      message="Information"
-      description="You can select transactions by date, by date and parking, or only by parking"
-      type="info"
-      showIcon
-      closable
-    />         
-    )
-}
 
   const columns = [
     {
