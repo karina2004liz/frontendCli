@@ -26,7 +26,32 @@
     padding: 30px;
     background: #ececec;
     height: 75vh;
+    border-radius:.5rem ;
     overflow-y: scroll;
+  }
+
+  .site-card-wrapper-profile{
+    padding: 30px;
+    background:#1a1a2e;
+    height: 75vh;
+    border-radius:1rem ;
+    border-bottom-right-radius: 9rem;
+    color: whitesmoke;
+
+  }
+
+  .site-card-wrapper-report{
+    padding: 30px;
+    background:#a1c6ea;
+    height: 75vh;
+    border-radius:.5rem ;
+    color: whitesmoke;
+    overflow-y: scroll;
+
+  }
+
+  .ant-form-item-label{
+    font-weight: 700;
   }
 
 .infoProfile {
@@ -34,4 +59,36 @@
     font-weight: 700;
     
 }
+
+.ant-card-head{
+  background-color:#507dbc;
+  border-top-left-radius: 9rem;
+  border-top-right-radius: 12px;
+  margin-bottom: 0;
+}
+
+.ant-card-body{
+  text-align: center;
+}
+
+
  
+.ant-card-head-title{
+  padding:5px 0
+}
+
+.ant-descriptions-title{
+  color: white;
+}
+
+.ant-descriptions-item-content{
+  color: white;
+}
+
+.ant-tabs-tab-btn{
+  font-weight: 600;
+}
+
+.ant-menu-item{
+  font-weight: 700;
+}

@@ -142,7 +142,7 @@ const Reports = (props) => {
   ];
 
   return (
-    <div className="site-card-wrapper">
+    <div className="site-card-wrapper-report">
           <Alert
       message="Information"
       description="You can select transactions by date, by date and parking, or only by parking"

@@ -5,6 +5,8 @@ import "./login.css";
 import { Spin } from "antd";
 import { Card, Col, Row } from "antd";
 import { Modal, Button } from "antd";
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -67,7 +69,10 @@ const Users = () => {
   const title = (props) =>{
       
     return(
-    <h3 style= {{color:"white"}}>{props}</h3>
+      <center>
+        <Avatar icon={<UserOutlined />} />
+        <h3 >{props}</h3>
+      </center>
     )
   }
 
@@ -84,7 +89,7 @@ const Users = () => {
             return (
               <Col key={el.id} span={8}>
                 <Card
-                  style={{ height: 250, "margin-top": "10%" ,background:"#001529", borderRadius:"10px", color:"white"}}
+                  style={{ height: 300, "margin-top": "10%" ,background:"#001529", borderRadius:"10px", color:"white"}}
                   title={title(el.name)}
                   bordered={true}
                 >
@@ -93,7 +98,7 @@ const Users = () => {
                     <b>{el.phone}</b>
                   </p>
                   <p>{el.id}</p>
-                  <Button type="primary" onClick={() => info(el.id)}>Transactions</Button>
+                  <Button style={{borderRadius:"5px"}} type="primary" onClick={() => info(el.id)}>Transactions</Button>
                 </Card>
               </Col>
             );
